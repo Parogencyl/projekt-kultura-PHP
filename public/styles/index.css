@@ -1,0 +1,134 @@
+.carousel-inner,
+.item {
+    height: 520px;
+}
+
+.carousel-indicators li {
+    background-color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: black;
+    opacity: 0.7;
+}
+
+.card .date {
+    font-size: 16px;
+    color: rgb(167, 167, 167);
+}
+
+.card-body {
+    font-size: 18px;
+}
+
+.card:hover {
+    transition: 0.3s linear;
+    box-shadow: 0 0 3px 1px rgb(124, 124, 124);
+}
+
+#main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+form img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .carousel-inner,
+    .item {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-inner,
+    .item {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-inner,
+    .item {
+        height: 300px;
+    }
+}
+
+.image-upload>input {
+    display: none;
+}
+
+.dustbin {
+    position: absolute;
+    top: calc(50% - 44px);
+    right: calc(50% - 45px);
+    width: auto;
+    height: auto;
+    font-size: 70px;
+    color: red;
+    background-color: rgba(189, 189, 189, 0.7);
+    z-index: 10;
+}
+
+.dustbin button {
+    border: none;
+    background-color: rgb(0, 0, 0, 0);
+    color: red;
+}
+
+#pagination>nav>div>div>p {
+    display: none;
+}
+
+#pagination>nav>div>span {
+    display: none;
+}
+
+#pagination>nav>div>a {
+    display: none;
+}
+
+#pagination svg {
+    width: 25px;
+    display: inline-block;
+}
+
+#pagination span>span>span {
+    color: white;
+    background-color: rgb(73, 73, 73) !important;
+}
+
+#pagination span>span[aria-current="page"]>span {
+    color: white;
+    background-color: rgb(45, 177, 67) !important;
+    font-weight: bold;
+    margin-right: -3px;
+}
+
+#pagination div>span>a {
+    color: white;
+    background-color: rgb(73, 73, 73) !important;
+    transition: 0.4s;
+}
+
+#pagination div>span>a:hover {
+    color: white;
+    background-color: rgb(109, 109, 109) !important;
+}
+
+#pagination a {
+    text-decoration: none;
+}

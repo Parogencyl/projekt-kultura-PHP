@@ -1,0 +1,72 @@
+ul {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul a {
+    transition: 0.4s;
+}
+
+ul a:hover {
+    color: rgb(85, 85, 85);
+}
+
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a:after {
+    content: " ";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(240, 240, 240);
+    transition: 1s;
+}
+
+nav ul li:hover a:after {
+    width: 100%;
+    left: 0%;
+    background-color: rgb(85, 85, 85);
+}
+
+nav ul {
+    letter-spacing: 2px;
+    font-size: 21px;
+}
+
+.social i {
+    font-size: 40px;
+    transition: 0.3s linear;
+}
+
+.social .fb:hover {
+    color: rgb(60, 60, 255);
+}
+
+.social .inst:hover {
+    color: rgb(129, 52, 175);
+}
+
+.social .yt:hover {
+    color: red;
+}
+
+.line {
+    height: 60px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    nav ul li:hover a:after {
+        width: 00%;
+    }
+}

@@ -1,0 +1,33 @@
+.warsztatTekst {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: calc(100% - 30px);
+    font-size: 20px;
+}
+
+.warsztatyDiv:hover div div {
+    padding: 15px 0 20px 0;
+}
+
+.warsztatyDiv div div {
+    transition-duration: 500ms;
+    transition-property: padding;
+    padding: 5px 0;
+}
+
+.warsztatyDiv img {
+    object-fit: cover;
+}
+
+#main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#box {
+    height: 40px;
+    margin-top: -30px;
+    border: solid 5px #000;
+    border: solid 2px rgb(105, 28, 28);
+    border-color: transparent transparent rgb(105, 28, 28) transparent;
+    border-radius: 0 0 90px 70%/40px;
+}

@@ -1,0 +1,53 @@
+.warsztatyDiv {
+    height: 400px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.social i {
+    font-size: 40px;
+    transition: 0.3s linear;
+}
+
+.line {
+    height: 60px;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.social .fb:hover {
+    color: rgb(60, 60, 255);
+}
+
+.social .inst:hover {
+    color: rgb(129, 52, 175);
+}
+
+.social .yt:hover {
+    color: red;
+}
+
+.bgImage {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.darkening {
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+}
