@@ -34,7 +34,7 @@ class View
                     break;
                 case $param:
                     $clearParams[$key] = utf8_decode($param);
-                    //$clearParams[$key] = htmlentities($param);
+                    $clearParams[$key] = htmlentities($param);
                     break;
                 default:
                     $clearParams[$key] = $param;

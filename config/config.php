@@ -26,4 +26,5 @@ return [
         'user' => 'bohun_projekt-kultura',
         'password' => 'Projekt-Kultura123'
     ]
+    
 ];

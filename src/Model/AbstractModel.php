@@ -16,7 +16,7 @@ abstract class AbstractModel
     {
         try{
             $this->validateConfig($config);
-            $this->createConnection($config, 'utf8mb4');
+            $this->createConnection($config);
         }catch(PDOException $e){
             throw new Exception('Connection error');
         }
@@ -33,6 +33,7 @@ abstract class AbstractModel
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
             ]
         );
+        $this->conn->query("SET NAMES 'utf8'");
     }
 
     private function validateConfig(array $config):void
